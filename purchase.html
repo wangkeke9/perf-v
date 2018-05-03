@@ -119,7 +119,7 @@
           <li class="item"> <a aria-current="page" href="index.html">Home</a> </li>
           <li class="item"> <a href="docs.html">Docs</a> </li>
           <div class="dropdown">
-            <li class="item">Demos</li>
+           <button class="btn"><li class="item">Demos</li></button>
             <div class="dropdown-content">
              <a href="demos_1.html">Demo1</a> 
              <a href="demos_2.html">Demo2</a>
@@ -313,5 +313,31 @@
 }
 .dropdown:hover .dropbtn {
 	background-color: #3e8e41;
+}
+.btn{
+border: none;
+font-weight: 400;
+}
+.btn:hover{
+outline: none;
+border: none;
+background-color: #FFFFFF;
+color: #37474f;
+		
+	}
+.btn:active
+	{
+		border: none;
+		outline: none;
+		background-color: #FFFFFF;
+		color: #37474f;
+		
+	}
+.btn:focus
+{
+outline: none;
+border: none;
+background-color: #FFFFFF;
+color: #47474f;
 }
 </style>
