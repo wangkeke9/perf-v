@@ -109,22 +109,22 @@
         </svg>
         </span> </button>
         <ul style="width:100%;">
-          <li class="item current"> <a aria-current="page" href="../index.html">Home</a> </li>
-          <li class="item "> <a href="../docs.html">Docs</a> </li>
+          <li class="item current"> <a aria-current="page" href="../index.html">主页</a> </li>
+          <li class="item "> <a href="../docs.html">文档</a> </li>
           <div class="dropdown">
-            <button class="btn"><li class="item">Demos</li></button>
+            <button class="btn"><li class="item">示例</li></button>
             <div class="dropdown-content">
-             <a href="../demos_1.html">Demo1</a> 
-             <a href="../demos_2.html">Demo2</a>
-             <a href="../demos_3.html">Demo3</a>
+             <a href="../demos_1.html">示例1</a> 
+             <a href="../demos_2.html">示例2</a>
+             <a href="../demos_3.html">示例3</a>
             </div>
           </div>
-          <li class="item"> <a href="../purchase.html">Purchase</a> </li>
-          <li class="item"> <a href="../about.html">About</a> </li>
-          <li class="item"> <a href="../blog.html">Blog</a> </li>
-          <li class="item" style="float: right;padding-left: 5px;"> <a href="../blog.html" style="font-size: 3px;">中文</a> </li>
+          <li class="item"> <a href="../purchase.html">购买</a> </li>
+          <li class="item"> <a href="../about.html">关于</a> </li>
+          <li class="item"> <a href="../blog.html">博客</a> </li>
+          <li class="item" style="float: right;padding-left: 5px;"> <a href="#" style="font-size: 3px;">中文</a> </li>
           <li class="item" style="float: right;padding-left: 5px;"> <a style="font-size: 3px;">|</a> </li>
-          <li class="item" style="float: right;padding-right: 5px;"> <a href="#" style="font-size: 3px;">EN</a> </li>
+          <li class="item" style="float: right;padding-right: 5px;"> <a href="../index.html" style="font-size: 3px;">EN</a> </li>
          
 
         </ul>
@@ -147,7 +147,7 @@
   
   <div class="container entry-content ">
   <blockquote>
-<p>The secret of change is to focus all of your energy not on fighting the old, but on building the new. --Socrates</p>
+<p style="font-style: normal;">改变的秘密，是把所有的精力放在建造新的东西，而非与过去抗衡。——苏格拉底</p>
 </blockquote>
 
 </div>
@@ -157,33 +157,34 @@
 <div class="container">
   
   <div class="sep-before">
- 		<h5 style="text-shadow:1px 1px #777;">Introduction</h5>
-	  <p>Perf-V is a FPGA demoboard designed for RISC-V opensource community by <a href="http://perfxlab.com/" style="color: #035287;font-weight: 600;">PerXLab</a>. It integrated various peripheral chips and offer many interfaces. Perf-V has great flexibility and transplant multiple architectures. We prepare abundant materials for you to learn out product and offer a perfect experiment platform for the design of RISC-V and FPGA products. It is a preferred hardware for you to study, development programs and make a DEMO.</p>
+ 		<h5 style="text-shadow:1px 1px #777;">简介</h5>
+	  <p>
+	  perf-V Model I 工程板是 <a target="_blank" href="http://perfxlab.com/cn/" style="color: #035287;font-weight: 600;">澎峰科技</a>为RISC-V开源社区设计的FPGA开发板。它集成了各种外设芯片，提供多种接口，具备强大的灵活性，成功的移植了多种RISC-V处理器架构，并配备了丰富的学习资料，为RISC-V处理器设计和FPGA产品开发提供了良好的实验平台。</p>
 
-	  <img src="../image/board2.png" width="75%">
-	  	  <h5 style="margin-top: 20px;margin-bottom: 30px; text-shadow:1px 1px #777;">Main Chips</h5>
+	  <img src="../image/board_CN.png" width="75%">
+	  	  <h5 style="margin-top: 20px;margin-bottom: 30px; text-shadow:1px 1px #777;">主要芯片</h5>
 	  
 	  <div style="text-align: center; margin:0 auto;">
 		<table border="1" align="center">
 			<tr>
 				<td></td>
-				<td>Number</td>
-				<td>Chips</td>
-				<td colspan="2">Features</td>
+				<td>数量</td>
+				<td>芯片</td>
+				<td colspan="2">特点</td>
 			</tr>
 			<tr>
 				<td rowspan="5">FPGA</td>
 				<td rowspan="5">1</td>
 				<td rowspan="5">XC7A35T-1FTG256C</td>
-				<td>Logic Cells</td>
+				<td>逻辑单元</td>
 				<td>33280</td>
 			</tr>
 			<tr>
-				<td >DSP48</td>
+				<td >乘法器DSP48</td>
 				<td>90</td>
 			</tr>
 			<tr>
-				<td >CLBs</td>
+				<td >可配置逻辑快</td>
 				<td>400Kb</td>
 			</tr>
 			<tr>
@@ -191,7 +192,7 @@
 				<td>1800Kb</td>
 			</tr>
 			<tr>
-				<td >CMTs</td>
+				<td >时钟单元</td>
 				<td>5</td>
 			</tr>
 			<tr>
@@ -234,7 +235,7 @@
   <div class="entry">
   
   <div class="container entry-content sep-before ">
-  <h3 style="text-shadow:1px 1px #777; margin-bottom: 30px;">Partners</h3>
+  <h3 style="text-shadow:1px 1px #777; margin-bottom: 30px;">合作</h3>
   <div class="wrap">
 <!--   	  <div class="item"><img src="image/RISCV.png"></div>
 	<div class="item"><img src="image/zght.png"></div>
@@ -438,7 +439,7 @@
 	display: none;
 	position: absolute;
 	background-color: #ffffff;
-	min-width auto;
+	min-width:90px;
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 	font-weight: 300;
 }
