@@ -46,7 +46,7 @@ visits = 1
 else
 visits = parseInt(visits) + 1
 setCookie("counter", visits, now)
-document.write("Visitor：" + visits)
+//document.write("Visitor：" + visits)
 function test()  
 {  
     alert(visits);  
