@@ -14,20 +14,20 @@
 
 <meta name="generator" content="Hugo 0.38.2">
 
-  <title>Demo3 Perf-V</title>
+  <title>Demo Perf-V</title>
   <link rel="canonical" href="https://themes.gohugo.io/theme/minimo/">
   
     <link href="https://themes.gohugo.io/theme/minimo/index.xml" rel="alternate" type="application/rss+xml" title="Minimo">
   
   
-  <link rel="icon" href="./image/bitbug_favicon.ico">
-<link rel="stylesheet" href="./Minimo_files/main.b0a0b202.css"><link rel="stylesheet" href="./Minimo_files/custom.css">
+  <link rel="icon" href="../image/bitbug_favicon.ico">
+<link rel="stylesheet" href="../Minimo_files/main.b0a0b202.css"><link rel="stylesheet" href="../Minimo_files/custom.css">
 
 <style>
 :root{--color-accent:#035287;}
 </style>
 
-<script charset="utf-8" src="./Minimo_files/sidebar.561d97e5.js.下载"></script><script charset="utf-8" src="file:///D:/assets/js/sidebar.561d97e5.js"></script></head>
+<script charset="utf-8" src="../Minimo_files/sidebar.561d97e5.js.下载"></script><script charset="utf-8" src="../../../assets/js/sidebar.561d97e5.js"></script></head>
 
 
 <body class="home type-page has-sidebar">
@@ -42,17 +42,16 @@
     
     <div class="logo">
       <a href="https://themes.gohugo.io/theme/minimo/">
-        <img src="./image/logo.png">
+        <img src="../image/logo.png">
       </a>
     </div>
     
     <h2 class="title site-title " >
    	Perf-V
     </h2>
-    <div class="desc">
-    Welcome to Perf-V world!<br>
-    Let's building computer & intelligence from scratch.
-    
+    <div class="desc" style="font-style: normal;">
+    欢迎来到Perf-V！<br>
+    让我们可以从头搭建计算机与智能。
     </div>
   </header>
 
@@ -110,22 +109,16 @@
         </svg>
         </span> </button>
         <ul style="width: 100%;">
-          <li class="item"> <a aria-current="page" href="index.html">Home</a> </li>
-          <li class="item "> <a href="docs.html">Docs</a> </li>
-          <div class="dropdown">
-            <button class="btn"><li class="item" style="font-weight:600;">Demo</li></button>
-            <div class="dropdown-content">
-             <a href="demos_1.html">Demo1</a> 
-             <a href="demos_2.html">Demo2</a>
-             <a href="demos_3.html">Demo3</a> </div>
-          </div>
-          <li class="item"> <a href="purchase.html">Purchase</a> </li>
-          <li class="item"> <a href="about.html">About</a> </li>
-          <li class="item"> <a href="blog.html">Blog</a> </li>
+          <li class="item"> <a aria-current="page" href="index_CN.html">主页</a> </li>
+          <li class="item "> <a href="docs_CN.html">文档</a> </li>
+ 		  <li class="item current"> <a href="demo_CN.html">示例</a> </li>
+          <li class="item"> <a href="purchase_CN.html">购买</a> </li>
+          <li class="item"> <a href="about_CN.html">关于</a> </li>
+          <li class="item"> <a href="blog_CN.html">博客</a> </li>
           <div style="float: right;">
-			  <li class="item" > <a href="#" style="font-size: 0.7em;">EN</a> </li>
+			  <li class="item" > <a href="../demo.html" style="font-size: 0.7em;">EN</a> </li>
 			  <li class="item" > <a style="font-size: 0.7em;">|</a> </li>
-			  <li class="item"> <a href="CN/demos_3_CN.html" style="font-size: 0.7em;">中文</a> </li>
+			  <li class="item"> <a href="#" style="font-size: 0.7em;">中文</a> </li>
           </div>
         </ul>
       </div>
@@ -133,7 +126,7 @@
 
       <header id="header" class="header site-header">
         <div class="container sep-after">
-          <div class="header-info"><h4 class=" title" style="color: #035281;text-shadow:2px 2px #CFDEE7;">XADC Demo</h4>
+          <div class="header-info"><h4 class=" title" style="color: #035281;text-shadow:2px 2px #CFDEE7;">XADC 示例</h4>
           </div>
         </div>
       </header>
@@ -146,59 +139,31 @@
   <div class="container sep-before">
  <section class="widget widget-recent_posts sep-after">
 
-	<h6>Purpose</h6>
-	 <p>The xadc ip core is used to acquire input data and output sampling results.</p>
-	 <h6>Environment</h6>
-	 <p>vivado2017.4</p>
-	 <h6>Process</h6>
-	 <p>1.Instantiate xadc's ip core and related programs in the same folder. And folder is named as project_XADC.<br>
-2.Connect the development board, as shown:
-</p>
- 
- <img src="image/demo/demo3_1.jpg">
- 
- 
-  <p>3.Open the vivado file integrated download, and download the jtag connection. Then, double-click the Xadc in the figure to open the xadc simulation.
-	 </p>
-	<img src="image/demo/demo3_2.png">
+		<h6>简介</h6>
+	<p></p>
+	 <p>1.拥有完整的编译和下载环境，操作方便。</p>
+	 <p>2.使用流程</p>
 	
-	<p>Add the data to be checked after opening. As shown below:
+ 
+ <img src="../image/demo/pic1.png">
+ 
+  <p>(1)用vivado下载软核到perf-v。</p>
+  <img src="../image/demo/pic2.png">
+ 
+ 
+  <p>(2)用提供的makefile，执行相应的编译程序命令即可编译程序。
+如图所示：
+
+	 </p>
+	<img src="../image/demo/pic3.png">
+	
+	<p>
+（3）用提供的makefile，执行相应的下载命令即可下载程序到开发板中。如图所示：
 </p>
-<img src="image/demo/demo3_3.png">
+<img src="../image/demo/pic4.png">
 
-<p>At this point the A5 pin in the test board. Wiring as shown:</p>
-<img src="image/demo/demo3_4.jpg">
-
-<p>The A5 pin is connected to the test voltage. The red and black lines in the figure are grounded.
-Input voltage of 2.0 volts test results as shown :VAUXP1_VAUXP2
-</p>
-<img src="image/demo/demo3_5.jpg">
-<img src="image/demo/demo3_6.jpg">
-<p>VAUXP1_VAUXP2 display 0.601V，Because the circuit diagram uses the partial pressure method to step down to 1V, so the test results for this. After the same voltage change, the test results are as shown in the figure:</p>
-<img src="image/demo/demo3_7.jpg">
-<img src="image/demo/demo3_8.jpg">
-
-<table>
-<caption>Correspondence between ad channel and development version in development version</caption>
-	<tr>
-		<td>Pin Number</td>
-		<td>AO</td>
-		<td>A1</td>
-		<td>A2</td>
-		<td>A3</td>
-		<td>A4</td>
-		<td>A5</td>
-	</tr>
-	<tr>
-		<td>Ad Number</td>
-		<td>AD11</td>
-		<td>AD3</td>
-		<td>AD10</td>
-		<td>AD2</td>
-		<td>AD9</td>
-		<td>AD1</td>
-	</tr>
-</table>
+<p>（4）示例：将三色led程序下载到板子中的效果如图所示：</p>
+<img src="../image/demo/pic5.jpg">
 
 
 </section>
@@ -309,7 +274,7 @@ Input voltage of 2.0 volts test results as shown :VAUXP1_VAUXP2
     </div>
   </div><script>window.__public_path__='\/assets\/js\/'</script>
 
-<script src="./Minimo_files/main.4d3afaaf.js.下载"></script><script src="./Minimo_files/custom.js.下载"></script>
+<script src="../Minimo_files/main.4d3afaaf.js.下载"></script><script src="../Minimo_files/custom.js.下载"></script>
 
 
 
@@ -339,7 +304,7 @@ Input voltage of 2.0 volts test results as shown :VAUXP1_VAUXP2
 	display: none;
 	position: absolute;
 	background-color: #ffffff;
-	min-width auto;
+	min-width:90px;
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 	font-weight: 300;
 }
