@@ -49,9 +49,10 @@
     <h2 class="title site-title" >
    	Perf-V
     </h2>
-    <div class="desc" style="font-style: normal;">
-    欢迎来到Perf-V！<br>
-    人工智能之行，始于足下。
+    <div class="desc">
+    Welcome to Perf-V world!<br>
+    Let's building computer & intelligence from scratch.
+    
     </div>
   </header>
 
@@ -108,26 +109,17 @@
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
         </span> </button>
-        <ul style="width: 100%;">
-          <li class="item"> <a aria-current="page" href="../CN/index_CN.html">主页</a> </li>
-          <li class="item "> <a href="../CN/docs_CN.html">下载</a> </li>
-          <li class="item "> <a href="../CN/demo_CN.html">示例</a> </li>
-<!--
-          <div class="dropdown">
-            <button class="btn"><li class="item">示例</li></button>
-            <div class="dropdown-content">
-             <a href="../CN/demos_1_CN.html">示例1</a> 
-             <a href="../CN/demos_2_CN.html">示例2</a>
-             <a href="../CN/demos_3_CN.html">示例3</a> </div>
-          </div>
--->
-          <li class="item"> <a href="../CN/purchase_CN.html">购买</a> </li>
-          <li class="item"> <a href="../CN/about_CN.html">关于</a> </li>
-          <li class="item current"> <a href="../CN/blog_CN.html">博客</a> </li>
-           <div style="float: right;">
-			  <li class="item" > <a href="blog_3_perf.html" style="font-size: 0.7em;">EN</a> </li>
+               <ul style="width: 100%;">
+          <li class="item"> <a aria-current="page" href="../index.html">Home</a> </li>
+          <li class="item "> <a href="../docs.html">Download</a> </li>
+          <li class="item "> <a href="../demo.html">Demo</a> </li>
+          <li class="item"> <a href="../purchase.html">Purchase</a> </li>
+          <li class="item"> <a href="../about.html">About</a> </li>
+          <li class="item current"> <a href="../blog.html">Blog</a> </li>
+          <div style="float: right;">
+			  <li class="item" > <a href="#" style="font-size: 0.7em;">EN</a> </li>
 			  <li class="item" > <a style="font-size: 0.7em;">|</a> </li>
-			  <li class="item"> <a href="#" style="font-size: 0.7em;">中文</a> </li>
+			  <li class="item"> <a href="blog_4_perf_CN.html" style="font-size: 0.7em;">中文</a> </li>
           </div>
         </ul>
       </div>
@@ -135,11 +127,11 @@
 
       <header id="header" class="header site-header">
         <div class="container blog-sep-after">
-          <div class="header-info"><h4 class=" title" style="color: #035281;text-shadow:2px 2px #CFDEE7;">Perf-V开发板新特性之USB2.0应用</h4>
+          <div class="header-info"><h4 class=" title" style="color: #035281;text-shadow:2px 2px #CFDEE7;">New Features of Perf-V Development Board Gigabit Ethernet Application</h4>
           </div>
   <div style="margin-top: 20px;">
   
-  <font style="font-size:0.8em;">2018年6月6日&nbsp;&nbsp;&nbsp;&nbsp;毕小雪</font>
+  <font style="font-size:0.8em;">2018,June 17&nbsp;&nbsp;&nbsp;&nbsp;Bi Xiaoxue</font>
 
   </div>
         </div>
@@ -153,12 +145,13 @@
   <div class="container sep-before">
  <section class="widget widget-recent_posts sep-after">
 
-<p style="text-indent: 2em;">USB，是英文通用串行总线的缩写，是一个外部总线标准，用于规范电脑与外部设备的连接和通讯。是应用在PC领域的接口技术,USB接口支持设备的即插即用和热插拔功能。</p>
-<p style="text-indent: 2em;">Perf-V开发板上，可以使用高速口转2.54毫米插针接口连接USB2.0模块,实现USB数据传输。</p>
-<div  align="center" style="margin-bottom: 20px;"> <img src="../image/blog/blog3_1.png" width="95%" > </div>
-<div  align="center" style="margin-bottom: 20px;"> <img src="../image/blog/blog3_2.png" width="95%" > </div>
-<div align="right"> <strong >购买配件和Perf-V主板后可获得成套代码与文档。</strong></div>
-<div align="right"> <strong><a target="_blank" href="https://shop350413479.taobao.com">购买链接：https://shop350413479.taobao.com</a></strong></div>
+<p style="text-indent: 2em;">As an interconnection interface, Ethernet interface is widely used nowadays. Ethernet can be seen everywhere from home broadband to server data exchanges to industrial controls. In FPGA system, it is mainly used for high-speed and long-distance data transmission, such as LED large-screen display, monitoring system and so on.</p>
+<p style="text-indent: 2em;">On the Perf-V development board, Ethernet modules can be connected using the high speed to 2.54mm expender. When Ethernet data needs to be sent, FPGA sends the data to PHY chip. After the PHY chip codes the data, the data is loaded to the network line through network transformer. Data is transferred to the receiver via the network. The data sent from the remote end is transmitted to the network transformer through the network cable, and the output of the network transformer is connected to PHY chip. After decoding the signal, the actual data is obtained, and then the data is transmitted to the FPGA chip. As shown in the figure, data transmission is carried out in the Ethernet experiment based on Perf-V development board. The received characters are HELLO PERFXLAB issued by FPGA, and the actual measured transmission rate is 121*8 MHZ.</p>
+<div  align="center" style="margin-bottom: 20px;"> <img src="../image/blog/blog4_1.png" width="95%" > </div>
+<div  align="center" style="margin-bottom: 20px;"> <img src="../image/blog/blog4_2.png" width="95%" > </div>
+<div align="right"> <strong >Attention: Complete code and documentation are available upon purchase of parts and Perf-V project boards.</strong></div>
+<div align="right"> <strong><a target="_blank" href="https://shop350413479.taobao.com">Purchase link: https://shop350413479.taobao.com</a></strong></div>
+
 
 
 

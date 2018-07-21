@@ -125,7 +125,7 @@
           <li class="item"> <a href="../CN/about_CN.html">关于</a> </li>
           <li class="item current"> <a href="../CN/blog_CN.html">博客</a> </li>
            <div style="float: right;">
-			  <li class="item" > <a href="blog_3_perf.html" style="font-size: 0.7em;">EN</a> </li>
+			  <li class="item" > <a href="blog_4_perf.html" style="font-size: 0.7em;">EN</a> </li>
 			  <li class="item" > <a style="font-size: 0.7em;">|</a> </li>
 			  <li class="item"> <a href="#" style="font-size: 0.7em;">中文</a> </li>
           </div>
@@ -135,11 +135,11 @@
 
       <header id="header" class="header site-header">
         <div class="container blog-sep-after">
-          <div class="header-info"><h4 class=" title" style="color: #035281;text-shadow:2px 2px #CFDEE7;">Perf-V开发板新特性之USB2.0应用</h4>
+          <div class="header-info"><h4 class=" title" style="color: #035281;text-shadow:2px 2px #CFDEE7;">Perf-V开发板新特性之千兆以太网应用</h4>
           </div>
   <div style="margin-top: 20px;">
   
-  <font style="font-size:0.8em;">2018年6月6日&nbsp;&nbsp;&nbsp;&nbsp;毕小雪</font>
+  <font style="font-size:0.8em;">2018年6月17日&nbsp;&nbsp;&nbsp;&nbsp;毕小雪</font>
 
   </div>
         </div>
@@ -153,10 +153,10 @@
   <div class="container sep-before">
  <section class="widget widget-recent_posts sep-after">
 
-<p style="text-indent: 2em;">USB，是英文通用串行总线的缩写，是一个外部总线标准，用于规范电脑与外部设备的连接和通讯。是应用在PC领域的接口技术,USB接口支持设备的即插即用和热插拔功能。</p>
-<p style="text-indent: 2em;">Perf-V开发板上，可以使用高速口转2.54毫米插针接口连接USB2.0模块,实现USB数据传输。</p>
-<div  align="center" style="margin-bottom: 20px;"> <img src="../image/blog/blog3_1.png" width="95%" > </div>
-<div  align="center" style="margin-bottom: 20px;"> <img src="../image/blog/blog3_2.png" width="95%" > </div>
+<p style="text-indent: 2em;">以太网接口作为一种互联型接口，当下应用非常的广泛。从家用宽带，到服务器数据交换，再到工业控制，各个地方都能看到以太网的身影。FPGA系统使用以太网，则主要用于高速远距离的数据传输，如LED大屏显示、监控系统等。</p>
+<p style="text-indent: 2em;">Perf-V开发板上，可以使用高速口转2.54毫米插针接口连接以太网模块。当需要发送以太网数据时，FPGA把数据发送给PHY芯片，PHY芯片将数据编码后，通过网络变压器将数据加载到网线上。数据经由网络传递到接收方。远端发送过来的数据，经由网线传递给网络变压器，网络变压器的输出连接到PHY芯片上，PHY芯片对信号进行解码后，得到实际的数据，然后将数据传递给FPGA芯片。如图在基于Perf-V开发板的以太网实验中进行数据传输，接收到的字符为FPGA所发出的HELLO PERFXLAB,实际测得传输速率为121*8 = 968 MHZ。</p>
+<div  align="center" style="margin-bottom: 20px;"> <img src="../image/blog/blog4_1.png" width="95%" > </div>
+<div  align="center" style="margin-bottom: 20px;"> <img src="../image/blog/blog4_2.png" width="95%" > </div>
 <div align="right"> <strong >购买配件和Perf-V主板后可获得成套代码与文档。</strong></div>
 <div align="right"> <strong><a target="_blank" href="https://shop350413479.taobao.com">购买链接：https://shop350413479.taobao.com</a></strong></div>
 
